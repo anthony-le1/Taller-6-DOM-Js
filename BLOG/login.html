@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+
+<body>
+    <div class="card">
+        <aside class="panel-image">
+            <div class="brand">
+                <h1>Mi CV</h1>
+                <p>Accede a tu cuenta rápidamente</p>
+            </div>
+        </aside>
+        <main class="panel-form">
+            <form action="" id="loginForm">
+                <h2 class="form-title">Iniciar Sesión</h2>
+                <p class="form-sub small">Introduce tu usuario y contraseña para acceder</p>
+                <div class="field">
+                    <label for="email"> Correo o Usuario</label>
+                    <input type="email" name="email" id="email" inputmode="email" autocomplete="username"
+                        placeholder="anthony_ledesma@gmail.com" required>
+                </div>
+
+                <div class="field password-row">
+                    <label for="password"> Contraseña</label>
+                    <input type="password" name="password" id="password" inputmode="password"
+                        autocomplete="current-password" placeholder="••••••••" required minlength="6">
+                    <button type="button" class="toggle-pass" aria-label="Mostrar contraseña" id="togglePass">Mostrar</button>
+                </div>
+
+                <div class="row" style="margin-bottom:14px;justify-content:space-between">
+                    <label class="remember"><input type="checkbox" id="remember"> <span
+                            class="small">Recordarme</span></label>
+                    <a href="#" class="small" style="color:var(--accent);text-decoration:none">¿Olvidaste tu
+                        contraseña?</a>
+                </div>
+
+                <button class="btn" type="submit">Entrar</button>
+
+                <div class="divider" aria-hidden="true"></div>
+
+                <div class="secondary">
+                    ¿No tienes cuenta? <a href="register.html">Regístrate</a>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="assets/js/login.js"></script>
+
+</body>
+
+</html>

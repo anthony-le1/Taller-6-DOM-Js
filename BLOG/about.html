@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí</title>
+
+    <!-- Estilos base del proyecto -->
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+</head>
+
+<body>
+
+    <main>
+        <section class="about-card">
+            <div class="about-grid">
+
+                <div>
+                    <h2>Sobre mí</h2>
+                    <p>
+                        Soy estudiante de Tecnología Superior en Desarrollo de Software, con interés en el diseño de
+                        interfaces, desarrollo web y creación de aplicaciones funcionales y accesibles.
+                    </p>
+                    <p>
+                        Me gusta trabajar con HTML, CSS y JavaScript, enfocándome en la experiencia del usuario y en
+                        mantener una estructura clara y ordenada del código.
+                    </p>
+
+                    <h3 style="margin-top:20px">Habilidades</h3>
+                    <div class="skills" id="skills">
+                        <span class="skill">HTML</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">UI Design</span>
+                        <span class="skill">DOM</span>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="projects.html" target="_blank" class="btn">Ver proyectos</a>
+                        <a href="assets/cv/CV_Anthony_Ledesma.pdf" target="_blank" class="btn">Descargar CV</a>
+                    </div>
+                </div>
+
+                <div class="about-avatar">
+                    <img src="assets/images/men.jpg" alt="Foto de perfil">
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script>
+        const skills = document.querySelectorAll(".skill");
+
+        skills.forEach(skill => {
+            skill.addEventListener("mouseenter", () => {
+                skill.style.background = "var(--teal)";
+                skill.style.color = "#fff";
+            });
+
+            skill.addEventListener("mouseleave", () => {
+                skill.style.background = "#eef7f7";
+                skill.style.color = "var(--teal)";
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+#cvContainer {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 45%;
+    height: 100vh;
+    background: #f4f6f7;
+    padding: 40px 24px;
+    overflow-y: auto;
+    transition: right 0.4s ease;
+    z-index: 100;
+}
+
+#cvContainer.open {
+    right: 0;
+}
+.cv-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+
+.cv-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cv-header h2 {
+    margin: 0;
+}
+
+.cv-header p {
+    color: gray;
+    margin-top: 4px;
+}
+
+.cv-section {
+    margin-bottom: 20px;
+}
+
+.cv-section h3 {
+    margin-bottom: 8px;
+    color: var(--teal);
+}
+
+.cv-section ul {
+    padding-left: 18px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+
+    <link rel="stylesheet" href="assets/css/create_project.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<main style="min-height:100vh;display:flex;align-items:center;justify-content:center;">
+    <div class="card">
+
+        <h2 class="title">Nuevo Proyecto</h2>
+
+        <form id="projectForm">
+            <div class="field">
+                <label for="titulo">Título del proyecto</label>
+                <input type="text" id="titulo" required>
+            </div>
+
+            <div class="field">
+                <label for="descripcion">Descripción</label>
+                <textarea id="descripcion" required></textarea>
+            </div>
+
+            <div class="field">
+                <label for="imagen">Imagen</label>
+                <input type="file" id="imagen" accept="image/*">
+                <img id="preview" class="preview">
+            </div>
+
+            <button type="submit" class="btn">Guardar Proyecto</button>
+        </form>
+
+    </div>
+</main>
+
+<!-- SOLO ESTE SCRIPT -->
+<script src="assets/js/projects.js"></script>
+</body>
+</html>
+
